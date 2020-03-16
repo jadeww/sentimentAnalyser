@@ -1,0 +1,74 @@
+﻿* {
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+/*面板*/
+#panel{
+    position:fixed;
+    right:36%;
+    top:200px;
+    display: inline-block;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px #dddddd solid;
+    padding: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /*阴影: 水平 竖直 模糊x像素 颜色*/
+    box-shadow: 0px 0px 10px #999;
+    width: 300px;
+}
+
+/*面板头部*/
+#panel .panel-header{
+    font-size: 13px;
+    font-family: Arial;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0px;
+    width: 150px;
+    margin: 0px auto;
+}
+/*面板中间*/
+#panel .pannel-content{
+    margin-top: 20px;
+}
+
+#panel .pannel-content .input{
+    margin-bottom: 9px;
+    position: relative;
+    height: 36px;
+}
+
+#panel .pannel-content label{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+#panel .pannel-content .input input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dddddd;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+#panel .login button{
+    width: 100%;
+    height: 33px;
+    border: 0px;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: orange;
+    outline: none;
+}

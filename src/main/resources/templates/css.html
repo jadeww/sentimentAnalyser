@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Analysis</title>
+<link rel="stylesheet" th:href="@{../static/css/a.css}">
+</head>
+<body>
+	<div>
+		<img src="../../static/img/bg2.jpg">
+	</div>
+	<!--面板-->
+	<div id="panel">
+		<!--面板的头部-->
+		<div class="panel-header">
+			<h2>Sentiment Analyser</h2>
+		</div>
+		<!--面板的主要内容-->
+		<div class="pannel-content">
+			<form method="post" th:action="@{/show}" th:object="${sentenceDto}" >
+				<div class="input">
+					<!-- input type="text" placeholder="请输入需要分析的句子"-->
+					<input maxlength="200" type="text" name="input"
+						placeholder="请输入需要分析的句子">
+				</div>
+				<div class="login">
+					<button type="submit">分析</button>
+				</div>
+			</form>
+			<p th:text="${result}" />
+		</div>
+	</div>
+</body>
